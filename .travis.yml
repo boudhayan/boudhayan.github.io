@@ -14,11 +14,19 @@ node_js:
 install:
   - yarn
 
+git:
+  depth: 3
+
 script:
   - yarn build
   - yarn lint
 
-branches:
-  only:
-    - master
-    - develop
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
+  on:
+    branch: develop
