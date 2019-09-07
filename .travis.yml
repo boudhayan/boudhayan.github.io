@@ -17,6 +17,8 @@ install:
 script:
   - yarn build
   - yarn lint
+  - gatsby build && gh-pages -b master -d public
+
 
 branches:
   only:
