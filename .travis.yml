@@ -6,7 +6,11 @@ cache:
     - node_modules
 
 notifications:
-  email: false
+  email:
+    recipients:
+      - hello@boudhayan.com
+    on_success: always
+    on_failure: always
 
 node_js:
   - 8
