@@ -133,16 +133,16 @@ const Project = ({
               float: 'right',
             }}
           >
-            <Box mx={1} fontSize={5}>
+            {/* <Box mx={1} fontSize={5}>
               <SocialLink
                 name="Check repository"
                 fontAwesomeIcon="github"
                 url={repositoryUrl}
               />
-            </Box>
+            </Box> */}
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="See project"
+                name="Read Article"
                 fontAwesomeIcon="globe"
                 url={projectUrl}
               />
